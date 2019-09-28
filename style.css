@@ -1,3 +1,52 @@
 html {
   background: yellow;
 }
+
+.page-header {
+  background: blue;
+  color: orange;
+  padding: 30px 100px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 50px;
+}
+
+.page-content {
+  display: flex;
+}
+
+.page-nav {
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.page-main {
+  background: white;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.heroimage {
+  margin: 25px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 200px;
+}
+
+.column {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 25px;
+}
+
+footer {
+  font-style: italic;
+  padding-top: 20px;
+  text-align: center;
+}
