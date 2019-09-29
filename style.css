@@ -1,11 +1,37 @@
 html {
-  background: yellow;
+  background: #ededed;
+  color: #3d3d3d;
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+a {
+  color: #1191d6;
+  text-decoration: none;
+}
+
+.page-nav>a {
+  color: #1191d6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4d5fc4;
+}
+
+a:hover {
+  background: #39b5e6;
+  color: #ffffff;
+}
+
+a:active {
+  background: #243470;
+  color: #ffffff;
 }
 
 .page-header {
-  background: blue;
-  color: orange;
-  padding: 30px 100px;
+  color: #243470;
+  padding: 2vw 9vw;
   text-align: center;
 }
 
@@ -18,35 +44,82 @@ html {
 }
 
 .page-nav {
-  flex-basis: 200px;
+  border-right: solid 1px #d1d1d1;
+  flex-basis: 150px;
   flex-grow: 0;
   flex-shrink: 0;
+  padding: 10px;
 }
 
 .page-main {
-  background: white;
   flex-grow: 1;
+  padding: 25px;
   text-align: center;
 }
 
 .heroimage {
-  margin: 25px;
+  margin-bottom: 20px;
+  width: 600px;
+  max-width: 100%;
 }
 
 .columns {
   display: flex;
-  justify-content: space-around;
-  padding: 20px 200px;
+  justify-content: center;
 }
 
 .column {
-  flex-basis: 0;
-  flex-grow: 1;
-  padding: 25px;
+  flex-basis: 300px;
 }
 
-footer {
-  font-style: italic;
+.column:not(:last-child) {
+  margin-right: 35px;
+}
+
+.bodycopy {
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+.page-footer {
+  color: #a3a3a3;
   padding-top: 20px;
   text-align: center;
+}
+
+
+
+@media (max-width: 719px) {
+
+  .page-title {
+    font-size: 8vw;
+  }
+
+  .page-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-nav {
+    border: none;
+    display: flex;
+    flex-basis: 0;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .page-nav a {
+    margin: 10px;
+  }
+
+  .columns {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .column:not(:last-child) {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
 }
