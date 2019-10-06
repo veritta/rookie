@@ -29,17 +29,7 @@ a:active {
   color: #ffffff;
 }
 
-.page-header {
-  color: #243470;
-  padding: 2vw 9vw;
-  text-align: center;
-}
-
-.page-title {
-  font-size: 50px;
-}
-
-.page-content {
+.page-main {
   display: flex;
 }
 
@@ -51,7 +41,22 @@ a:active {
   padding: 10px;
 }
 
-.page-main {
+.page-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  color: #243470;
+  padding: 2vw 9vw;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 50px;
+}
+
+.page-body {
   flex-grow: 1;
   padding: 25px;
   text-align: center;
@@ -86,8 +91,6 @@ a:active {
   padding-top: 20px;
   text-align: center;
 }
-
-
 
 @media (max-width: 719px) {
 
